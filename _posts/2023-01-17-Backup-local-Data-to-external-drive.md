@@ -1,14 +1,15 @@
 ---
 title: Backup local Data to external drive bash script
 date: 2023-01-17 5:00:00 
-categories: [Linux]
-tags: [Linux, Ubuntu, Backup]
+categories: [linux]
+tags: [linux, ubuntu, backup]
 layout: post
 toc: true
 comments: false
 math: false
 mermaid: false
 ---
+
 I wanted to automate local machine data backup to external drive. First I was checking is there somekind of backup solutions already but then I thought it might be better to practice my bash scripting skills which are not good say the least. 
 
 ### Logic

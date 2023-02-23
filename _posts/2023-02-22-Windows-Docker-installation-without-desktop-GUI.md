@@ -9,6 +9,7 @@ comments: false
 math: false
 mermaid: false
 ---
+
 The aim is to install Dockerd with Docker Compose to manage containers on my local machine. This installation instructions are done to WSL Ubuntu on Windows 11. 
 
 This is not complete tutorial how to use docker or docker compose. Just a brief documentation how to install Dockerd to your windows 11 machine without having to use Docker Desktop.
