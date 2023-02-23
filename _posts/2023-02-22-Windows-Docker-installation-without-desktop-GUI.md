@@ -1,10 +1,7 @@
 ---
 title: Windows Docker installation without desktop GUI
 date: 2023-02-22 5:00:00 
-author:
-  name: Anssi
-  link: https://example.com
-categories: [windows, docker]
+categories: [windows]
 tags: [windows, docker, wsl]
 layout: post
 toc: true
@@ -12,8 +9,6 @@ comments: false
 math: false
 mermaid: false
 ---
-
-## Prologoue
 The aim is to install Dockerd with Docker Compose to manage containers on my local machine. This installation instructions are done to WSL Ubuntu on Windows 11. 
 
 This is not complete tutorial how to use docker or docker compose. Just a brief documentation how to install Dockerd to your windows 11 machine without having to use Docker Desktop.
@@ -133,3 +128,21 @@ services:
 Now run command `docker compose up` and wait a bit. 
 When you see "Start worker process..." navigate to http://localhost:8080/ with your browser. 
 You should see your index page opening up. 
+
+![Docker compose results in browser](/assets/img/2023-02-22-Windows-Docker-installation-without-desktop-GUI/browser.png)
+
+The reason why I didn't add --detach to up command is to easily see if there's any errors. `docker compose up` vs. `docker compose up -d` --> `docker compose logs --f` ...
+
+Don't forget to shutdown & remove your test container after you are done by entering command `docker compose down` 
+also remove nginx image to keep your image gallery neat and tidy (unless you need this image later on the road). Get images list by running `docker images` command
+```shell
+userName@host:~/helloworld$ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    3f8a00f137a0   13 days ago   142MB
+```
+
+Use image name & tag or image id to remove the image
+`docker rmi nginx:latest` or `docker rmi 3f8a00f137a0`
+
+Source for installation instructions: [Solita blog post](https://dev.solita.fi/2021/12/21/docker-on-wsl2-without-docker-desktop.html) which is modified to get working on my machine.
+Rest are more or less from my previous work.
