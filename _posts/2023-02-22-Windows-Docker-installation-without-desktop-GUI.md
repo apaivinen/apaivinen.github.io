@@ -18,6 +18,12 @@ If you need to install WSL follow this documentation [Install Linux on Windows w
 
 Open WSL Ubuntu and let's get going. 
 
+>**Warning**  
+>This guide doesn't work with [vscode local dev containers](https://code.visualstudio.com/docs/devcontainers/containers). I found out this because out of the blue I had a need to start figure out how to create developer containers and noticed this configuration doesn't work at all. I didn't have time or energy to find out how to configure this properly. It's on my mile long ToDo-list.
+>
+>For now I'm back to Docker Desktop vscode extension which installs docker desktop itself. 
+{: .prompt-danger }
+
 ## Installation
 ### Install pre-required packages
 ```bash
