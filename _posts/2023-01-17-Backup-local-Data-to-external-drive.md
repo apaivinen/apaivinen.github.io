@@ -1,8 +1,8 @@
 ---
 title: Backup local Data to external drive bash script
 date: 2023-01-17 5:00:00 
-categories: [linux]
-tags: [linux, ubuntu, backup]
+categories: [linux, script]
+tags: [linux, ubuntu, backup, script]
 layout: post
 toc: true
 comments: false

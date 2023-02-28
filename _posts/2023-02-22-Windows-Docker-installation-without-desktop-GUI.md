@@ -1,8 +1,8 @@
 ---
 title: Windows Docker installation without desktop GUI
 date: 2023-02-22 5:00:00 
-categories: [windows]
-tags: [windows, docker, wsl]
+categories: [windows, wsl]
+tags: [windows, docker, wsl, ubuntu]
 layout: post
 toc: true
 comments: false
