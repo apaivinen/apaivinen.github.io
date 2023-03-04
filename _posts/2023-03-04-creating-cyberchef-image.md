@@ -19,6 +19,12 @@ Basicially I wanted to create image which does the following
 
 Fortunately [CyberChef Wiki](https://github.com/gchq/CyberChef/wiki/Getting-started) have a great instructions how to install & compile the tool.
 
+## CyberChef description
+Direct quote:
+>"The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis"
+
+Live CyberChef tool at their [Github Pages](https://gchq.github.io/CyberChef/)
+
 # Dockerfile
 
 I already knew nginx would be more than sufficient for my needs so I searched for [nginx container images](https://hub.docker.com/_/nginx) and found out that `nginx:1.23.3-alpine-slim` image is great for this project.
@@ -73,7 +79,7 @@ And this could be the last thing to to, to instruct image to start nginx when st
 CMD ["nginx", "-g", "daemon off;"]
 ```
 As when I was testing this image I noticed it's huge. I mean way too huge.   
-Base image is less than 10MB and compiled CyberChef is 31MB. The image I created was more than 600MB in total even after deleting source codes & NodeJS modules.  
+Base image is less than 10MB and compiled CyberChef is 31MB. The image I created was more than 600MB in total even after deleting source codes & NodeJS modules. So I needed to figure out a way to shrink the image size.  
 
 Then I found-out about "multi-stage builds".  
 Basically I needed to split my image building to two stages.   
@@ -84,7 +90,7 @@ Stage two named main copies CyberChef tool to ngingx to serve.
 
 So this is why when selecting image you can see `FROM nginx:1.23.3-alpine-slim as build` at the first code block. 
 
-Last part of the docker file contains copying CyberChef files from build stage to pristine nging image
+Last part of the docker file contains copying CyberChef files from build stage to pristine nging image. Now the image size is a bit over 51MB which is over 10 times less than the original what I created!  
 ```Dockerfile
 # use same nginx alpine slim image as build stage uses
 FROM nginx:1.23.3-alpine-slim as main
