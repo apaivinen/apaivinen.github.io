@@ -115,8 +115,10 @@ There were couple of helpful community posts and one major blog post which reall
 
 # Sources
 
-More information about attribute reporting & source and destination mapping https://github.com/dresden-elektronik/deconz-rest-plugin/issues/1121#issuecomment-524617659  
-Awesome post describing the whole pairing & configuration process https://riesinger.dev/posts/ikea-fyrtur-homeassistant-deconz/
-Original blueprint made for ZHA (not deCONZ) https://community.home-assistant.io/t/zha-ikea-open-close-switch-for-covers-e-g-kadrilj-fyrtur/258904  
+More information about attribute reporting & source and destination mapping [https://github.com/dresden-elektronik/deconz-rest-plugin/issues/1121#issuecomment-524617659](https://github.com/dresden-elektronik/deconz-rest-plugin/issues/1121#issuecomment-524617659)  
 
-bonus: Ikea Fyrtur mods https://github.com/mjuhanne
+Awesome post describing the whole pairing & configuration process [https://riesinger.dev/posts/ikea-fyrtur-homeassistant-deconz/](https://riesinger.dev/posts/ikea-fyrtur-homeassistant-deconz/)  
+
+Original blueprint made for ZHA (not deCONZ) [https://community.home-assistant.io/t/zha-ikea-open-close-switch-for-covers-e-g-kadrilj-fyrtur/258904](https://community.home-assistant.io/t/zha-ikea-open-close-switch-for-covers-e-g-kadrilj-fyrtur/258904)  
+
+bonus: Ikea Fyrtur mods [https://github.com/mjuhanne](https://github.com/mjuhanne)
