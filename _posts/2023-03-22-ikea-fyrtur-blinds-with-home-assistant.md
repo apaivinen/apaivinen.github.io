@@ -33,7 +33,6 @@ When I started the pairing process by pressing two buttons on the blinds the sea
 After a while of debugging the situation I noticed that deCONZ Application was able to see new device but Phoscon was not able to pair it.   
 So this is what I saw from deCONZ application, a new node named `FYRTUR block-out roller blind`.  
 
-![](/Home%20%Assistant/devices/ikea-fyrtur-blinds-with-home-assistant/img/1-NewBlindNode.png)
 ![Picture 1. FYRTUR block-out roller blind node in deCONZ application](/assets/img/2023-03-22-ikea-fyrtur-blinds-with-home-assistant/1-NewBlindNode.png)
 
 I right clicked on the node and pressed `Read Simple descriptors` which triggered node name change. For me it appeared as "Window covering device 14". Apparently I've tried to pair this couple of times U+1F605   
