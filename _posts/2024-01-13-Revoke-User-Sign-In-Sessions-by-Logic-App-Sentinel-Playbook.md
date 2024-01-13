@@ -10,8 +10,6 @@ math: false
 mermaid: false
 published: true
 ---
-# Revoke user sign-in sessions from Entra ID using a Logic App in Azure Sentinel
-
 The original **Revoke-AADSignInSessions playbook** from the **Azure Sentinel repository**, provided by the **Microsoft Entra ID solution**, had some minor issues. Specifically, the incident-triggered playbook couldn't be attached to Sentinel's Automation Rule, preventing it from being used automatically when an incident is created. However, when I began working on it, I realized that instead of merely fixing the trigger, I could enhance the solution to better suit my requirements.
 
 Original playbook outline: 
@@ -45,13 +43,13 @@ If you deploy any of those **Revoke-EntraIDUserSignInSessions**, it will create
 - Logic App
 - Managed identity for Logic App
 - Microsoft Sentinel API connection for Managed Identity
-# Incident triggered playbook specifications
+## Incident triggered playbook specifications
 
 The current playbook utilizes the **Sentinel connector** to retrieve incident and account details, as well as to update incidents with comments. Additionally, a **System Managed Identity** is employed by the logic app for authentication with the Sentinel connector and Graph API. The necessary permissions for this managed identity are as follows:
 - Graph API: **User.ReadWrite.All** (see powershell bellow)
 - Sentinel role in Azure: **Microsoft Sentinel Responder**
 
-## Powershell to assign Graph permissions
+### Powershell to assign Graph permissions
 You need to have [AzureAD Powershell module](https://learn.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) installed
 ```powershell
 $MIGuid = "<Enter your managed identity guid here>"
