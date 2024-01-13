@@ -1,8 +1,8 @@
 ---
 title: Creating docker image of CyberChef tool
 date: 2023-03-04 5:00:00 
-categories: [docker, creating container image]
-tags: [docker,cyberchef,creating container image,selfhosted,learning,tutorial]
+categories: [Docker, Creating container image]
+tags: [Docker,CyberChef,Creating container image,Self-Hosted,Learning,Tutorial]
 layout: post
 toc: true
 comments: false

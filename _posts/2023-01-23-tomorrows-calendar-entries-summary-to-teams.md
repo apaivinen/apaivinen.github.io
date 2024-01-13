@@ -1,8 +1,8 @@
 ---
 title: Tomorrows calendar entries summary notification to teams chat as flow bot
 date: 2023-01-23 5:00:00 
-categories: [power automate, personal automation]
-tags: [power automate, Flow, automation, teams, outlook, personal automation, tutorial]
+categories: [Power Automate, Personal Automation]
+tags: [Power Automate, Flow, Automation, Teams, Outlook, Personal Automation, Tutorial,Email]
 layout: post
 toc: true
 comments: false
