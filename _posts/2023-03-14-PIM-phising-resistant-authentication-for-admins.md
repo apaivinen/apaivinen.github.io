@@ -1,8 +1,8 @@
 ---
 title: PIM & Strong authentication for admins
 date: 2023-03-14 5:00:00
-categories: [Azure Active Directory, Privileged Identity Management]
-tags: [azure active directory,entra,privileged identity management,PIM,mfa,strong authentication,security key,FIDO2,microsoft,learning,tutorial]
+categories: [Entra ID, Privileged Identity Management]
+tags: [Entra ID,entra,Privileged Identity Management,PIM,MFA,strong authentication,Security key,FIDO2,Microsoft,Learning,Tutorial,Security]
 layout: post
 toc: true
 comments: false
