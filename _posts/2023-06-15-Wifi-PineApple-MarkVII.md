@@ -2,7 +2,7 @@
 title: WiFi PineApple Mark VII
 date: 2023-06-15 5:00:00
 categories: [Hacking, Penetration testing]
-tags: [wifi,pentesting,security,learning,hak5,tools]
+tags: [WiFi,PenTesting,Penetration Testing,Security,Learning,Hak5,Tools, Hacking]
 layout: post
 toc: true
 comments: false

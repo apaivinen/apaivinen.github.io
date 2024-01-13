@@ -2,7 +2,7 @@
 title: Pairing Ikea Fyrtur blinds with Home Assistant
 date: 2023-03-22 5:00:00
 categories: [Home Assistant, Device Configuration]
-tags: [Home Assistant,Device Configuration,Home Automation,Blueprint,Zigbee,deCONZ,IOT,]
+tags: [Home Assistant,Device Configuration,Home Automation,Blueprint,Zigbee,deCONZ,IOT,Automation]
 layout: post
 toc: true
 comments: false
