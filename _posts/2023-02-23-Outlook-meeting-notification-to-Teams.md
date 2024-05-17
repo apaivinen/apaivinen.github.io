@@ -2,7 +2,7 @@
 title: Outlook meeting notification to Teams
 date: 2023-02-23 5:00:00 
 categories: [Power Automate, Personal Automation]
-tags: [Power automate, Flow, Automation, Teams, Outlook, Personal Automation, Tutorial, Meeting]
+tags: [Power Automate, Flow, Automation, Teams, Outlook, Personal Automation, Tutorial, Meeting]
 layout: post
 toc: true
 comments: false
