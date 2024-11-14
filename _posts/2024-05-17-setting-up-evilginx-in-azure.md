@@ -149,6 +149,12 @@ chmod 400 ~/.ssh/dev-evilginx_key.pem
 
 `chmod 400` makes the file read-only for the owner and denies all permissions from other groups and users.
 
+Here's windows equilevant commands for icals
+```powershell
+icacls "your-key.pem" /inheritance:r
+icacls "your-key.pem" /grant:r %username%:R 
+```
+
 **Note**: Copying the `.pem` file and making permission changes needs to be done only once per machine where you are using the key.
 
 Now, to connect to the virtual machine with ssh, you need to provide `dev-evilginx_key.pem`.
@@ -195,6 +201,8 @@ nameserver 1.0.0.2
 **Keep in mind**: This is only a temporary name server configuration, which will be overwritten after the next boot. So, if you have auto-shutdown enabled or need to reboot your machine, you’ll need to reconfigure the nameservers.
 
 For my use case, this solution is sufficient. However, for your specific use case, you might need to figure out how to make it a persistent configuration.
+
+If you need to update DNS configs or there are issues with DNS you could try to restart the dns resolver.
 
 To add your machine name to `/etc/hosts`, follow these steps
 1. Open the file using the following command:
@@ -312,6 +320,7 @@ My main goal was to keep it simple and get everything working. For my testing pu
 
 In the next post, I’ll delve into my approach for detecting this type of proxy using Microsoft Sentinel.
 
+Thanks for [bittib010](https://github.com/bittib010) for contribution to details!
 ## Sources
 - Github repository for Evilginx: [https://github.com/kgretzky/evilginx2](https://github.com/kgretzky/evilginx2)
 - Github repository for Jan bakkers evilginx: [https://github.com/BakkerJan/evilginx2](https://github.com/BakkerJan/evilginx2)
