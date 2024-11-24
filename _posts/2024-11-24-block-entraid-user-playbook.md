@@ -136,7 +136,7 @@ At this point, your setup should look something like this:
     ![Picture 8. Comment action](/assets/img/2024-11-24-block-entraid-user-playbook/Picture-8-Comment.png)
 
     Basically the logic app should look like this  
-    ![Picture 9. Full logic app](Picture-9-FullLogicApp.png)
+    ![Picture 9. Full logic app](/assets/img/2024-11-24-block-entraid-user-playbook/Picture-9-FullLogicApp.png)
 
 17. Save the Logic App.
 18. Assign permissions to the managed identity (see the PowerShell commands below).
