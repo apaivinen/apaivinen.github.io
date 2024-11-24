@@ -204,8 +204,8 @@ I hope you found this helpful!
 -Anssi
 
 ## Sources
-- Graph API, Update user https://learn.microsoft.com/en-us/graph/api/user-update?view=graph-rest-1.0&tabs=http
-- Logic app expression, If() https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#if
-- Logic app expression, Empty() https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#empty
-- Logic app expression, Join() https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#join
-- Powershell, MgGraph module https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0
+- [Graph API, Update user](https://learn.microsoft.com/en-us/graph/api/user-update?view=graph-rest-1.0&tabs=http)
+- [Logic app expression, If()](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#if)
+- [Logic app expression, Empty()](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#empty)
+- [Logic app expression, Join()](https://learn.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference#join)
+- [Powershell, MgGraph module](https://learn.microsoft.com/en-us/powershell/microsoftgraph/installation?view=graph-powershell-1.0)
