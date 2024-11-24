@@ -1,7 +1,7 @@
 ---
 title: Revoke user sign-in sessions from Entra ID using a Logic App in Azure Sentinel
 date: 2024-01-13 5:00:00
-categories: [Microsoft Sentinel, Logic App]
+categories: [Microsoft Sentinel, Playbook]
 tags: [Azure,Logic App,Automation,Guide,Security,Session,SecurityAutomation,SIEM,SOAR]
 layout: post
 toc: true
