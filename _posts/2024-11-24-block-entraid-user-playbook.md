@@ -2,7 +2,7 @@
 title: Block Entra ID User playbook for Microsoft Sentinel
 date: 2024-11-24 5:00:00
 categories: [Microsoft Sentinel, Playbook]
-tags: [Azure,Logic App,Automation,Guide,Security,Remidiation,SecurityAutomation,SIEM,SOAR]
+tags: [Azure,Logic App,Automation,Guide,Security,Remidiation,SecurityAutomation,SIEM,SOAR, Entra ID, Microsoft Graph]
 layout: post
 toc: true
 comments: false
