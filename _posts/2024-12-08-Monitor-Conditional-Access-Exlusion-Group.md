@@ -122,7 +122,7 @@ To test the rule:
 
 This example provides the basics for reading group ID from watchlist for searching any membership changes from AuditLogs table. I kept the CSV and the Analytic rule as simple as possible so this could be used as a base for other group membership monitoring aswell.
 
-Hopefully you got some ideas from this one for your specific requirements
+Hopefully you got some ideas from this one for your specific requirements!
 
 -Anssi
 
