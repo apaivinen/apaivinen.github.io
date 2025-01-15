@@ -42,7 +42,7 @@ After the Logic App has been created, enable the Managed Identity:
 4. Take note of the **Object (Principal) ID** because you'll need it in the next step to assign the necessary permissions.
 ### Assign Permissions to Managed Identity
 
-For this automation, we only need the **Application.Read.All** permission. If you want to expand the functionality, refer to the official documentation on [Microsoft Learn](/assets/img/2025-01-15-expiring-app-secret-notifier/https://learn.microsoft.com/) for more details.
+For this automation, we only need the **Application.Read.All** permission. If you want to expand the functionality, refer to the official documentation on [Microsoft Learn](https://learn.microsoft.com/) for more details.
 ```powershell
   
 # Add the correct 'Object (principal) ID' for the Managed Identity
