@@ -263,5 +263,5 @@ I hope you find this guide helpful and that you can take something meaningful fr
 
 -Anssi
 ## Sources
-- [Get application - Microsoft Graph v1.0 | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/application-get?view=graph-rest-1.0&tabs=http)
+- [Get application - Microsoft Graph v1.0 - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/application-get)
 - https://learn.microsoft.com/en-us/graph/api/application-removekey
