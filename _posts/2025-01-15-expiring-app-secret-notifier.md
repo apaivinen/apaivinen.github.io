@@ -43,6 +43,7 @@ After the Logic App has been created, enable the Managed Identity:
 ### Assign Permissions to Managed Identity
 
 For this automation, we only need the **Application.Read.All** permission. If you want to expand the functionality, refer to the official documentation on [Microsoft Learn](https://learn.microsoft.com/) for more details.
+
 ```powershell
   
 # Add the correct 'Object (principal) ID' for the Managed Identity
@@ -105,6 +106,7 @@ Now, let's create the **GET** request to retrieve applications and build the che
 	- Set the input to **HTTP body** from the previous HTTP action.
 	- Use the following schema (provided below).
 	- I named my action **Parse JSON - HTTP - Get Apps**, as this name will be relevant in later steps.
+
 ```json
 {
     "properties": {
@@ -143,17 +145,21 @@ Now, let's create the **GET** request to retrieve applications and build the che
 3. **Create a "For Each" loop for applications**
 	- Name the loop **For Each - Apps**.
 	- Since we want to loop through the applications, set the output value to **Parse JSON - HTTP - Get Apps** -> **values**. Technically, this would be:
+    
     ```
     outputs('Parse_JSON_-_HTTP_-_Get_apps')?['body']?['value']
     ```
+
 ![Picture 3. For each - Apps](/assets/img/2025-01-15-expiring-app-secret-notifier/2-foreach-apps.png)
 
 4. **Create a "For Each" loop for secrets inside "For Each - Apps"**
 - Name this loop **For Each - Secrets**.
 - Set the output value to **passwordCredentials** from **For Each - Apps**. Technically, this would be:
+   
    ```
    items('For_each_-_Apps')?['passwordCredentials']
 	```
+
    ![Picture 4. For each - Secrets](/assets/img/2025-01-15-expiring-app-secret-notifier/3-foreach-secrets.png)
    
 5. **Create a "Condition" action to check secret expiry**
@@ -169,9 +175,11 @@ Now, let's create the **GET** request to retrieve applications and build the che
     - **Source Time Zone:** **(UTC) Coordinated Universal Time**.
     - **Destination Time Zone:** Select your preferred time zone.
     - **Time Format:** Use your desired format. For this example, I'll use a custom format:
+    
     ```
     dd.MM.yyyy klo HH:mm
 	```
+    
 	![Picture 6. Convert Timezone](/assets/img/2025-01-15-expiring-app-secret-notifier/5-converttimezone.png)
 	
 8. **Create an "Append to String Variable" action**
@@ -203,7 +211,8 @@ Here's a quick overview of the actions you should have by this point:
         ![](/assets/img/2025-01-15-expiring-app-secret-notifier/8-check-applist.png)
 2. **In the "True" section of the condition, create a "Compose" action**
     - Use the following HTML content in the **Compose** action:
-	```html
+	
+    ```html
 	<style>table, th, td {border: 1px solid;}table{width: 100%;border-collapse: collapse; }</style>
 	<table>
 	        <thead>
@@ -219,6 +228,7 @@ Here's a quick overview of the actions you should have by this point:
 	        </tbody>
 	</table>
 	```
+
 	This **Compose** action contains the HTML for the table, with the **AppList-HTML** variable inserted between the `<tbody></tbody>` tags to populate the table with your expiring secret details.
 	![Picture 10. Compose - Message](/assets/img/2025-01-15-expiring-app-secret-notifier/9-composeMessage.png)
 
