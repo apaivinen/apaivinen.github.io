@@ -177,6 +177,7 @@ Now, let's create the **GET** request to retrieve applications and build the che
 8. **Create an "Append to String Variable" action**
 - Select **AppList-HTML** as the variable to append to.
 - Use the following HTML to append a table row with the relevant secret information:
+
 ```html
 <tr>
 	<td>items('For_each_-_Apps')?['displayName']</td>
@@ -185,6 +186,7 @@ Now, let's create the **GET** request to retrieve applications and build the che
 	<td>body('Convert_time_zone')</td>
 </tr>
 ```
+
 ![Picture 7. Append to string](/assets/img/2025-01-15-expiring-app-secret-notifier/6-appendString.png)
 
 And that's it! Your **Checker Logic** should now be complete.
