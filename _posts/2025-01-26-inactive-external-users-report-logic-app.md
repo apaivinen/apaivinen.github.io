@@ -44,8 +44,8 @@ After the Logic App has been created, enable the Managed Identity:
 
 For this automation, we need **AuditLog.Read.All** and **User.Read.All** permissions.  
 Optionally you could assing **User.ReadWrite.All** If you want to use this automation for deleting the inactive users. Refer to the official documentation on [Microsoft Learn](https://learn.microsoft.com/) for more details.  
-- [List users](https://learn.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http)
-- [Delete a user](https://learn.microsoft.com/en-us/graph/api/user-delete?view=graph-rest-1.0&tabs=http)
+- [List users - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http)
+- [Delete a user - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/user-delete?view=graph-rest-1.0&tabs=http)
 
 ```powershell
 # Add the correct 'Object (principal) ID' for the Managed Identity
@@ -398,9 +398,9 @@ Hopefully this helps you manage your guest users.
 -Anssi
 
 ## Sources
-- [List users](https://learn.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http)  
-- [Delete a user](https://learn.microsoft.com/en-us/graph/api/user-delete?view=graph-rest-1.0&tabs=http)  
-- [How to manage inactive user accounts](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-manage-inactive-user-accounts#how-to-detect-inactive-user-accounts)  
+- [List users - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/user-list?view=graph-rest-1.0&tabs=http)  
+- [Delete a user - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/user-delete?view=graph-rest-1.0&tabs=http)  
+- [How to manage inactive user accounts - Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/howto-manage-inactive-user-accounts#how-to-detect-inactive-user-accounts)  
 - [Github, apaivinen/Entra-ID-Logic-Apps](https://github.com/apaivinen/Entra-ID-Logic-Apps/tree/main/Report_inactive_external_users)  
 
 ## Extra: Unauthorized Error in Detail for Those Who Are Wondering
