@@ -358,14 +358,16 @@ Second to last action is Compose with following content:
 ```
 
  Make sure you added tableRows variable in between of tbody tags.  
-![Picture 9. Compose.png](/assets/img/2025-01-26-inactive-external-users-report-logic-app/9-compose.png)  
-For the last action, create a "Post Message in a Chat or Channel"
-	- **Post As:** User
-	- **Post In:** Channel
-	- **Team:** Select your team
-	- **Channel:** Select your channel
-	- **Message:** Use the **Outputs** of your previously created **Compose** action.
-	- You can optionally add a subject for the message under **Advanced Parameters** if needed.  
+
+![Picture 9. Compose.png](/assets/img/2025-01-26-inactive-external-users-report-logic-app/9-compose.png)
+
+For the last action, create a "Post Message in a Chat or Channel"  
+- **Post As:** User
+- **Post In:** Channel
+- **Team:** Select your team
+- **Channel:** Select your channel
+- **Message:** Use the **Outputs** of your previously created **Compose** action.
+- You can optionally add a subject for the message under **Advanced Parameters** if needed.  
 
 ![Picture 10. Post Message in a chat or channel.png](/assets/img/2025-01-26-inactive-external-users-report-logic-app/10-post-message.png)
 
