@@ -1,7 +1,7 @@
 ---
 title: Expiring App Secret Notifier
 date: 2025-01-15 5:00:00
-categories: [Entra ID]
+categories: [Entra ID, Logic App]
 tags: [Azure,Guide,Security,Entra ID, Monitoring]
 layout: post
 toc: true
@@ -273,7 +273,10 @@ This one was quite fun to work on! The original, monstrous Logic App I had was a
 
 I hope you find this guide helpful and that you can take something meaningful from it!
 
+Here's a link to my deployment templates in [Github, apaivinen/Entra-ID-Logic-Apps](https://github.com/apaivinen/Entra-ID-Logic-Apps/tree/main/Expiring_App_Secret_Notifier)
+
 -Anssi
 ## Sources
 - [Get application - Microsoft Graph v1.0 - Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/application-get)
 - https://learn.microsoft.com/en-us/graph/api/application-removekey
+- [Github, apaivinen/Entra-ID-Logic-Apps](https://github.com/apaivinen/Entra-ID-Logic-Apps/tree/main/Expiring_App_Secret_Notifier)
