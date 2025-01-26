@@ -1,7 +1,7 @@
 ---
 title: Email summary to Teams
 date: 2023-01-17 5:00:00 
-categories: [Power Automate, Personal automation]
+categories: [Power Automate, Personal Automation]
 tags: [Power Automate, Flow, Automation, Teams, Outlook, Personal Automation, Tutorial]
 layout: post
 toc: true

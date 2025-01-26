@@ -2,7 +2,7 @@
 title: Expiring App Secret Notifier
 date: 2025-01-15 5:00:00
 categories: [Entra ID, Logic App]
-tags: [Azure,Guide,Security,Entra ID, Monitoring]
+tags: [Azure,Guide,Security,Entra ID,Monitoring,Teams,Email]
 layout: post
 toc: true
 comments: false

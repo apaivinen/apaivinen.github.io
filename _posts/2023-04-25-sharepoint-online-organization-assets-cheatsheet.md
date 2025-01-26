@@ -2,7 +2,7 @@
 title: Sharepoint Online Organization assets cheatsheet
 date: 2023-04-25 5:00:00
 categories: [Sharepoint Online, Powershell]
-tags: [Sharepoint Online,Powershell,Modern work,Cheatsheet,Guide,Tutorial,Microsoft]
+tags: [Sharepoint Online,Powershell,Modern work,Cheatsheet,Guide,Tutorial]
 layout: post
 toc: true
 comments: false

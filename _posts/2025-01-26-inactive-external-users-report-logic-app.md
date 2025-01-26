@@ -2,7 +2,7 @@
 title: Inactive External Users Report Logic App
 date: 2025-01-26 5:00:00
 categories: [Entra ID, Logic App]
-tags: [Azure,Guide,Security,Entra ID, Reporting]
+tags: [Azure,Guide,Security,Entra ID,Reporting,Teams]
 layout: post
 toc: true
 comments: false

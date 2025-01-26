@@ -2,7 +2,7 @@
 title: Cross-tenant synchronization
 date: 2023-03-10 5:00:00 
 categories: [Entra ID, External identities]
-tags: [Entra ID,External identities,Synchronization,Microsoft,Learning,Tutorial, Identities]
+tags: [Entra ID,External identities,Synchronization,Learning,Tutorial,Identities]
 layout: post
 toc: true
 comments: false
